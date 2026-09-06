@@ -9,10 +9,12 @@ description = "education machine learning library"
 requires-python = ">=3.11"
 
 dependencies = [
-    "numpy"
+    "numpy",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
+    "scikit-learn",
+    "sklearn"
 ]
