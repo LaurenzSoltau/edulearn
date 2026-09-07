@@ -51,7 +51,7 @@ class LinearRegression(Predictor):
             w_grad, b_grad = self._gradients(X, y)
 
             if epochs == 0:
-                rel = np.linalg.norm(w_grad, ord=np.inf)
+                rel = max(1, np.linalg.norm(w_grad, ord=np.inf))
 
             if np.linalg.norm(w_grad, ord=np.inf) < self.tol * rel and np.abs(b_grad) < self.tol * rel:
                 break
