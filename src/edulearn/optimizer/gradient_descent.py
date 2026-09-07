@@ -1,6 +1,12 @@
 from edulearn.optimizer import Optimizer
 
 class GradientDescent(Optimizer):
+    """
+    Create GradientDescent Optimizer
+
+    Parameters:
+        lr (np.float64): learning rate 
+    """
     def __init__(self, lr):
         super().__init__(lr)
 
