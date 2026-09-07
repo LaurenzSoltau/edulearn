@@ -16,5 +16,4 @@ dependencies = [
 dev = [
     "pytest",
     "scikit-learn",
-    "sklearn"
 ]
